@@ -4,7 +4,7 @@ contatos = []
 def validacao(txt, respValida, tipo):
     #Função é para validar os valores
     n = input(txt).capitalize()
-    if n not in respValida or n == '':
+    while n not in respValida or n == '':
         n = input(f'[VALOR INVÁLIDO] {txt}')
     
     if tipo == 1:
